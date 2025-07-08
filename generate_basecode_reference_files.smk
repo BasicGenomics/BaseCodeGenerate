@@ -1,4 +1,4 @@
-config: "config.yaml"
+configfile: "config.yaml"
 
 rule all:
     input: "{}/geneannotations.positive.gff3".format(config["outdir"]), "{}/reference.fa".format(config["outdir"]), "{}/reference.fa.fai".format(config["outdir"]), "{}/genomeref.3n.GA.1.ht2".format(config["outdir"])
