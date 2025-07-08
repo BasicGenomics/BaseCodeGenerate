@@ -12,7 +12,7 @@ rule move_reference:
 
 rule index_reference:
     input: "{}/reference.fa".format(config["outdir"])
-    output: "{}/reference.fa".format(config["outdir"])
+    output: "{}/reference.fa.fai".format(config["outdir"])
     threads: 1
     conda: "{workflow.basedir}/envs/full.yaml"
     shell: "samtools faidx {input}"
