@@ -47,7 +47,7 @@ def extract_exons(gtf_file, verbose = False):
             continue
 
         values_dict = {}
-        for attr in values.split(';')[:-1]:
+        for attr in values.split(';'):
             attr, _, val = attr.strip().partition('=')
             values_dict[attr] = val.strip('"')
 
