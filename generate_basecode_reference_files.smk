@@ -50,4 +50,4 @@ rule hisat3n_build:
     output: "{}/genomeref.3n.GA.1.ht2".format(config["outdir"])
     threads: config["threads"]
     conda: "envs/full.yaml"
-    shell: "config[hisat_3n_build] --base-change G,A --ss {input.ss} --exon {input.exon} -p {threads} {input.reference} genomeref"
+    shell: "{config[hisat_3n_build]} --base-change G,A --ss {input.ss} --exon {input.exon} -p {threads} {input.reference} genomeref"
