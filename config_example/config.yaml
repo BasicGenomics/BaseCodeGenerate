@@ -1,6 +1,5 @@
 fasta:
 gtf_file:
-outdir: 
 
 threads:
 hisat_3n_build:
