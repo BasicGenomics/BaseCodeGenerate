@@ -5,7 +5,7 @@ cd hisat-3n
 git checkout -b hisat-3n origin/hisat-3n
 make
 ```
-Step 2. Set up config.yaml (see example in config_example folder.
+Step 2. Set up config.yaml (see example in config_example folder).
 
 Step 3. Run BaseCodeGenerate:
 ```
