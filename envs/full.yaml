@@ -5,3 +5,4 @@ channels:
 dependencies:
 - agat=1.4.2
 - samtools=1.22
+- hisat-3n=0.0.3

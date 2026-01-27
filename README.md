@@ -1,13 +1,43 @@
-Step 1. Install HISAT-3N.
-```
-git clone https://github.com/DaehwanKimLab/hisat2.git hisat-3n
-cd hisat-3n
-git checkout -b hisat-3n origin/hisat-3n
-make
-```
-Step 2. Set up config.yaml (see example in config_example folder).
+# <span style="color:#583092">BaseCodeGenerate</span>
 
-Step 3. Run BaseCodeGenerate:
+## Usage
+
+### <span style="color:#EC008C">1. Install snakemake</span>
+
+Installation via Conda or Mamba is the recommended way to install Snakemake, as it enables Snakemake to automatically manage software dependencies required by the workflow. For alternative installation methods, please see the official [Snakemake documentation](https://snakemake.readthedocs.io/en/stable/getting_started/installation.html).
+
+```
+conda create -c conda-forge -c bioconda -c nodefaults -n snakemake snakemake
+conda activate snakemake
+```
+
+### <span style="color:#EC008C">2. Clone the repository</span>
+
+Clone the BaseCodeGenerate repository and move into the project directory:
+
+```
+git clone --branch conda https://github.com/BasicGenomics/BaseCodeGenerate.git
+cd BaseCodeGenerate
+```
+
+### <span style="color:#EC008C">3. Configure the workflow</span>
+
+Set up a config.yaml file (see config/ for a template).
+
+Required input files include:
+- a reference genome in FASTA format
+- an annotation file in GTF or GFF3 format
+
+We recommend fetching reference genome and annotation files from either
+[Ensembl](https://www.ensembl.org/info/data/ftp/index.html) or
+[GENCODE](https://www.gencodegenes.org).
+
+### <span style="color:#EC008C">4. Run BaseCodeGenerate</span>
+
+Execute the Snakemake workflow:
+
 ```
 snakemake -s /path/to/repo/generate_basecode_reference_files.smk -j {threads} --use-conda
 ```
+
+Copyright © 2026 Basic Genomics AB

@@ -2,4 +2,3 @@ fasta:
 gtf_file:
 
 threads:
-hisat_3n_build:
