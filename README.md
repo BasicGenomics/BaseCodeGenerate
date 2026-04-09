@@ -42,4 +42,4 @@ Execute the Snakemake workflow:
 snakemake -s /path/to/repo/generate_basecode_reference_files.smk -j {threads} --use-conda
 ```
 
-Copyright © 2026 Basic Genomics AB
+© 2026 Basic Genomics AB · All rights reserved
