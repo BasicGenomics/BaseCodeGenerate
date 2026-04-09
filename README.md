@@ -26,7 +26,9 @@ Set up a config.yaml file (see config/ for a template).
 
 Required input files include:
 - a reference genome in FASTA format
-- an annotation file in GTF or GFF3 format
+- an annotation file in GFF3 format
+
+Note: GTF format is also supported. However, since the pipeline outputs annotations in GFF3 format, we recommend starting with a GFF3 file to ensure consistency and avoid potential conversion issues.
 
 We recommend fetching reference genome and annotation files from either
 [Ensembl](https://www.ensembl.org/info/data/ftp/index.html) or
