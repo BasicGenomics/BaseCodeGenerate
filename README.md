@@ -1,4 +1,4 @@
-# <span style="color:#583092">BaseCodeGenerate</span>
+# <span style="color:#583092">BaseCode Generate</span>
 
 ## Usage
 
