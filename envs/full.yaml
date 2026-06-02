@@ -3,6 +3,6 @@ channels:
 - bioconda
 - nodefaults
 dependencies:
-- agat=1.4.2
+- agat=1.7.0
 - samtools=1.22
 - hisat-3n=0.0.3
